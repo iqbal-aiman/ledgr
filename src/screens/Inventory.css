@@ -1,0 +1,32 @@
+.alert-card {
+  background: #FBF3E4; border: 1.5px solid var(--gold);
+  border-radius: 16px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px;
+}
+.alert-title { font-size: 13px; font-weight: 700; color: var(--gray-900); }
+.alert-sub { font-size: 12px; color: var(--gray-600); margin-top: 3px; line-height: 1.4; }
+
+.inv-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.inv-stat { background: white; border-radius: 16px; padding: 16px 10px; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid rgba(15,29,46,0.05); }
+.inv-stat-value { font-size: 24px; font-weight: 800; color: var(--gray-900); }
+.inv-stat-value.green { color: var(--green); }
+.inv-stat-value.red   { color: var(--red); }
+.inv-stat-label { font-size: 10px; color: var(--gray-400); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+
+.inv-item-row { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--gray-100); }
+.inv-item-row:last-child { border-bottom: none; padding-bottom: 0; }
+.inv-item-info { flex: 1; }
+.inv-item-name { font-size: 14px; font-weight: 700; color: var(--gray-900); }
+.inv-item-price { font-size: 12px; color: var(--green); font-weight: 600; margin-top: 3px; }
+
+.inv-stock-badge { display: flex; flex-direction: column; align-items: center; background: var(--green-light); border-radius: 10px; padding: 6px 10px; min-width: 52px; }
+.inv-stock-badge.low { background: #FBEEEC; }
+.inv-stock-num { font-size: 18px; font-weight: 800; color: var(--green); line-height: 1; }
+.inv-stock-badge.low .inv-stock-num { color: var(--red); }
+.inv-stock-label { font-size: 9px; color: var(--gray-400); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.3px; }
+
+.inv-actions { display: flex; gap: 6px; }
+.inv-action-btn { width: 34px; height: 34px; border-radius: 10px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.inv-action-btn.edit { background: var(--green-light); color: var(--green); }
+.inv-action-btn.edit:active { background: #DCEADF; }
+.inv-action-btn.delete { background: #FBEEEC; color: var(--red); }
+.inv-action-btn.delete:active { background: #F4D9D4; }

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ledgr</string>
+    <string name="title_activity_main">ledgr</string>
+    <string name="package_name">com.ledgr.app</string>
+    <string name="custom_url_scheme">com.ledgr.app</string>
+</resources>

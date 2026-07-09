@@ -1,0 +1,50 @@
+.search-bar { padding: 12px 16px; background: white; border-bottom: 1px solid var(--gray-200); position: sticky; top: 57px; z-index: 5; }
+.search-wrap { position: relative; display: flex; align-items: center; }
+.search-icon-svg { position: absolute; left: 13px; pointer-events: none; display: flex; }
+
+.search-input {
+  width: 100%; padding: 11px 36px 11px 38px;
+  border: 1.5px solid var(--gray-200); border-radius: 12px;
+  font-size: 14px; background: var(--gray-100); color: var(--gray-900);
+}
+.search-input:focus { border-color: var(--gold); background: white; outline: none; }
+
+.search-clear {
+  position: absolute; right: 12px; color: var(--gray-400); font-size: 13px; cursor: pointer;
+  width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: var(--gray-200);
+}
+.search-clear:active { background: var(--gray-400); color: white; }
+
+.customer-list { flex: 1; padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; padding-bottom: 32px; }
+
+.customer-card {
+  background: white; border-radius: 18px; padding: 14px 16px;
+  display: flex; align-items: center; gap: 12px; cursor: pointer;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(15,29,46,0.05);
+}
+.customer-card:active { transform: scale(0.98); box-shadow: none; }
+
+.cust-avatar {
+  width: 46px; height: 46px; border-radius: 14px; background: var(--green-light);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; color: var(--green); font-size: 14px; flex-shrink: 0; letter-spacing: 0.5px;
+}
+
+.cust-info { flex: 1; min-width: 0; }
+.cust-name { font-size: 15px; font-weight: 700; color: var(--gray-900); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cust-meta { font-size: 11px; color: var(--gray-400); margin-top: 3px; display: flex; align-items: center; gap: 5px; }
+.cust-dot { color: var(--gray-300, var(--gray-200)); }
+
+.cust-right { text-align: right; flex-shrink: 0; }
+.cust-amount { font-size: 14px; font-weight: 800; color: var(--green); }
+.cust-amount-label { font-size: 10px; color: var(--gray-400); margin-top: 2px; }
+.cust-chevron { flex-shrink: 0; margin-left: 2px; display: flex; }
+
+.empty-state-card {
+  background: white; border-radius: 18px; padding: 48px 24px; text-align: center;
+  box-shadow: var(--shadow-sm); margin-top: 8px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.empty-state-card p { font-size: 16px; font-weight: 700; color: var(--gray-900); }
+.empty-state-card span { font-size: 13px; color: var(--gray-400); line-height: 1.5; }

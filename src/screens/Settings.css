@@ -1,0 +1,46 @@
+.add-item-row { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; flex-wrap: wrap; }
+
+.btn-green-sm {
+  padding: 13px 16px; background: var(--green); color: white; border-radius: 12px;
+  font-size: 14px; font-weight: 700; border: 1px solid var(--green); white-space: nowrap; cursor: pointer;
+}
+.btn-green-sm:active { background: var(--green-dark); transform: scale(0.96); }
+
+.settings-items-list { margin-top: 12px; border-top: 1px solid var(--gray-100); padding-top: 4px; }
+.settings-item-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100); }
+.settings-item-row:last-child { border-bottom: none; }
+.item-info { flex: 1; }
+.item-name { font-size: 14px; font-weight: 700; color: var(--gray-900); }
+.item-meta { display: flex; align-items: center; gap: 5px; margin-top: 3px; }
+.item-price-tag { font-size: 12px; color: var(--green); font-weight: 600; }
+.item-dot { color: var(--gray-200); font-size: 12px; }
+.item-stock-tag { font-size: 12px; color: var(--gray-400); }
+.item-stock-tag.low { color: var(--red); font-weight: 600; }
+
+.password-wrap { position: relative; display: flex; align-items: center; }
+.password-wrap .input-field { padding-right: 48px; }
+.eye-btn { position: absolute; right: 14px; background: none; border: none; padding: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 6px; }
+.eye-btn:focus { outline: none; }
+
+.settings-msg { font-size: 13px; padding: 10px 14px; border-radius: 10px; margin-bottom: 10px; font-weight: 600; border-left: 3px solid; }
+.settings-msg.success { color: var(--green); background: var(--green-light); border-left-color: var(--gold); }
+.settings-msg.error { color: var(--red); background: #FBEEEC; border-left-color: var(--red); }
+
+.btn-import {
+  display: block; width: 100%; padding: 15px; border: 1.5px solid var(--green); border-radius: 14px;
+  color: var(--green); font-size: 15px; font-weight: 700; text-align: center; cursor: pointer;
+  background: white; font-family: var(--font);
+}
+.btn-import:active { background: var(--green-light); transform: scale(0.97); }
+
+.btn-logout {
+  width: 100%; padding: 15px; background: #FBEEEC; color: var(--red); border: 1.5px solid var(--red);
+  border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: var(--font);
+}
+.btn-logout:active { background: #F4D9D4; transform: scale(0.97); }
+
+.app-version { text-align: center; font-size: 11px; color: var(--gray-400); padding-bottom: 8px; letter-spacing: 0.5px; }
+
+.inv-action-btn { width: 34px; height: 34px; border-radius: 10px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.inv-action-btn.delete { background: #FBEEEC; color: var(--red); }
+.inv-action-btn.delete:active { background: #F4D9D4; }

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --green:       #1B8A4C;
+  --green-light: #E8F5EE;
+  --green-mid:   #2EAD63;
+  --green-dark:  #146338;
+  --white:       #FFFFFF;
+  --gray-100:    #F7F8F7;
+  --gray-200:    #EEEFEE;
+  --gray-400:    #A0A8A2;
+  --gray-600:    #5A6360;
+  --gray-900:    #111C15;
+  --red:         #D93A3A;
+  --font:        'Segoe UI', system-ui, sans-serif;
+
+  /* Animation speeds */
+  --fast:   0.15s;
+  --normal: 0.25s;
+  --slow:   0.4s;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+}
+
+body {
+  font-family: var(--font);
+  background: var(--gray-100);
+  color: var(--gray-900);
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+}
+
+input, select {
+  font-family: var(--font);
+  outline: none;
+}
+
+/* Global page entry animation */
+.page-enter {
+  animation: pageSlideIn var(--normal) ease forwards;
+}
+
+@keyframes pageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale in */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Skeleton pulse */
+@keyframes skeleton {
+  0%   { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 400px 100%;
+  animation: skeleton 1.4s ease infinite;
+  border-radius: 8px;
+}
+
+/* Button press effect */
+.pressable {
+  transition: transform var(--fast) ease, box-shadow var(--fast) ease;
+}
+
+.pressable:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+/* Success checkmark */
+@keyframes checkDraw {
+  from { stroke-dashoffset: 100; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes circleDraw {
+  from { stroke-dashoffset: 200; }
+  to   { stroke-dashoffset: 0; }
+}
