@@ -108,3 +108,6 @@ This project is for portfolio/demonstration purposes.
 **Aiman Iqbal**
 BS Computer Science, UET Lahore
 [GitHub](https://github.com/iqbal-aiman)
+
+---
+*actively maintained and improved*
