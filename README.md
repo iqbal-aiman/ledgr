@@ -107,6 +107,15 @@ This project is for portfolio/demonstration purposes.
 
 **Aiman Iqbal**
 BS Computer Science, UET Lahore
+
+---
+
+## 🔮 Roadmap
+
+- [ ] Add data export (CSV/PDF)
+- [ ] Multi-language support (Urdu/English)
+- [ ] Cloud backup option
+- [ ] Dark mode
 [GitHub](https://github.com/iqbal-aiman)
 
 ---
