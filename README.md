@@ -115,8 +115,14 @@ BS Computer Science, UET Lahore
 - [ ] Add data export (CSV/PDF)
 - [ ] Multi-language support (Urdu/English)
 - [ ] Cloud backup option
-- [ ] Dark mode
 [GitHub](https://github.com/iqbal-aiman)
+
+---
+## Known Limitations
+
+- Data is stored locally on-device using Capacitor Preferences; there is currently no cloud backup or multi-device sync.
+- Designed for single-user, single-device usage (one shop, one device).
+- Print functionality depends on the device's connected printer/driver support.
 
 ---
 *actively maintained and improved*
